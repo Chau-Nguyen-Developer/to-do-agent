@@ -30,7 +30,20 @@ def add_task(myTask):
     new_number = len(tasks) + 1
     tasks.append({"number": new_number, "task": myTask, "done": False})
     save_tasks(tasks)
-    print("Finished adding task: {myTask}")
+    print("Finished adding task: ", myTask)
+
+#remove_task(task_number) (function that helps remove task if accidently put the task in)
+def remove_task(task_number):
+    updated_tasks =[]
+    tasks = load_tasks()
+    for t in tasks:
+        if t["number"] != task_number:
+            updated_tasks.append(t)
+    print("Removed successfully task ", task_number)
+    save_tasks(updated_tasks)
+    return updated_tasks
+
+
 
 #show_tasks() --> prints tasks
 def show_tasks():
@@ -38,14 +51,23 @@ def show_tasks():
     print(tasks)
 
 #complete_task(task_number)-->mark a task as done 
+def complete_task(task_number):
+    tasks = load_tasks()
 
 #main function
 def main():
     load_tasks()
+    print("CURRENT TASKS")
     show_tasks()
+    print("ADD ONE MORE TASK")
     add_task("Doing laundry.")
-    print("Just add a task.\n")
+    print("CURRENT TASKS AFTER ADDING")
     show_tasks()
+    print("REMOVE TASK 1")
+    remove_task(1)
+    print("CURRENT TASKS ABOUT REMOVING TASK 1")
+    show_tasks()
+
 
 if __name__ == "__main__":
     main()
