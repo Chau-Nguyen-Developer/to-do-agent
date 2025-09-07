@@ -1,10 +1,5 @@
 [
     {
-        "number": 2,
-        "task": "Buy orange juice",
-        "done": true
-    },
-    {
         "number": 3,
         "task": "Doing laundry.",
         "done": false
@@ -22,6 +17,26 @@
     {
         "number": 6,
         "task": "Doing laundry.",
+        "done": true
+    },
+    {
+        "number": 6,
+        "task": "Doing laundry.",
+        "done": false
+    },
+    {
+        "number": 7,
+        "task": "Clearing the table.",
+        "done": true
+    },
+    {
+        "number": 8,
+        "task": "Clearing the table.",
+        "done": false
+    },
+    {
+        "number": 8,
+        "task": "Clearing the table.",
         "done": false
     }
 ]
