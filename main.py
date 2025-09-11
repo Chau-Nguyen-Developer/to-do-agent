@@ -69,17 +69,12 @@ def complete_task(task_number):
 #main function
 def main():
     load_tasks()
-    print("CURRENT TASKS")
+    print("CURRENT TASKS: ")
     show_tasks()
-    # print("ADD ONE MORE TASK")
-    # add_task("Clearing the table.")
-    # print("CURRENT TASKS AFTER ADDING")
-    # show_tasks()
-    # print("REMOVE TASK 2")
-    # remove_task(2)
-    # print("CURRENT TASKS ABOUT REMOVING TASK 1")
-    # show_tasks()
-    complete_task(3)
+    print("\n")
+    print("Complete task 3")
+    complete_task(2)
+    print("Current tasks so far: ")
     show_tasks()
 
 

@@ -46,5 +46,12 @@ with open("tasks.json", "w", encoding="utf-8") as file:
 ```
 Normally would use json.dump(). Only use json.dumps() when want to manipulate the JSON as string in memory first. 
 
+## Update
+(AKA the evolvement of features along the way)
 
+### 09/09/2025. 
+When a task is completed, that task will not disappear. Now, the completed-task wil have the tickmark next to it. 
+I still need to work on the logic of the number. Number is sitll mixed up, as the array starts with index 0.  
+
+![Checkmark next to completed task and Number of tasks were mixed up](image.png) 
 
